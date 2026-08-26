@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Chen - 官方社群連結</title>
+    <title>醫生成效與 - 官方社群連結</title>
+    <!-- 引入 FontAwesome 圖示庫 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -34,17 +35,14 @@
         }
 
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            background-color: #ddd;
+            object-fit: cover;
             margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: #555;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
         h1 {
@@ -57,6 +55,7 @@
             font-size: 0.95rem;
             color: #666;
             margin-bottom: 25px;
+            line-height: 1.5;
         }
 
         .links-container {
@@ -112,13 +111,13 @@
 <body>
 
     <div class="container">
-        <div class="profile-img">
-            <i class="fa-solid fa-user-doctor"></i>
-        </div>
+        <!-- 個人頭貼 -->
+        <img src="banner.jpg" alt="醫生成效與" class="profile-img">
 
-        <h1>Doctor Chen</h1>
-        <p class="subtitle">歡迎來到我的頻道！點擊下方按鈕訂閱與追蹤最新的最新內容 👇</p>
+        <h1>醫生成效與</h1>
+        <p class="subtitle">歡迎來到我的頻道！點擊下方按鈕訂閱與追蹤最新內容 👇</p>
 
+        <!-- 按鈕連結區塊 -->
         <div class="links-container">
             <a href="https://www.youtube.com/@Doctor.Chen520" target="_blank" class="btn btn-youtube">
                 <i class="fa-brands fa-youtube"></i> 訂閱 YouTube 頻道
@@ -138,7 +137,7 @@
         </div>
 
         <footer>
-            &copy; 2026 Doctor Chen. All rights reserved.
+            &copy; 2026 醫生成效與. All rights reserved.
         </footer>
     </div>
 
