@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫生成效與 - 頻道歷史紀錄</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 35px 25px;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .message-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #5865F2;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* 時間軸視覺設計 */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background: #8ec5fc;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: #5865F2;
+            border: 2px solid #fff;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #777;
+            font-weight: bold;
+        }
+
+        .event {
+            font-size: 1.05rem;
+            color: #222;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        /* 返回按鈕 */
+        .btn-back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            background-color: #f1f3f5;
+            color: #495057;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1><i class="fa-solid fa-timeline"></i> 頻道歷史紀錄</h1>
+        </div>
+
+        <!-- 給粉絲的話 -->
+        <div class="message-box">
+            我真的很感謝每一位粉絲的支持，也讓我更有動力剪輯影片～也讓我成功解鎖人生成就 ❤️
+        </div>
+
+        <!-- 歷史里程碑列表 -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2021 / 11 / 27</div>
+                <div class="event">頻道成立 🎉</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2022 / 02 / 03</div>
+                <div class="event">100 訂閱</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2022 / 04 / 23</div>
+                <div class="event">1,000 訂閱 達成！</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2022 / 07 / 04</div>
+                <div class="event">2,000 訂閱</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2023 / 09 / 03</div>
+                <div class="event">5,000 訂閱</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2024 / 10 / 25</div>
+                <div class="event">10,000 訂閱 萬人突破！</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2025 / 09 / 29</div>
+                <div class="event">15,000 訂閱</div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2026 / 08 / 22</div>
+                <div class="event">20,000 訂閱 達成！</div>
+            </div>
+        </div>
+
+        <!-- 返回主頁按鈕 -->
+        <a href="index.html" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> 返回主頁面
+        </a>
+
+        <footer>
+            &copy; 2026 醫生成效與. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
